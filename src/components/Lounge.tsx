@@ -27,10 +27,23 @@ const Lounge = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-blue-900 mb-4">
             Lounge Bar
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Unwind in our sophisticated lounge with handcrafted cocktails, premium spirits, 
-            and a warm, inviting atmosphere perfect for any occasion.
-          </p>
+          <div className="text-lg text-gray-600 max-w-4xl mx-auto space-y-4">
+            <p>
+              Welcome to the lounge area at Casamia Restaurant, where we offer a luxurious and comfortable space for you to relax and unwind in the heart of Diani Beach, Kenya. With swaying palm trees, comfortable sofas, and a laid-back atmosphere, our lounge area is the perfect spot to enjoy a cocktail and some delicious bitings.
+            </p>
+            <p>
+              Our lounge area is designed to be both elegant and inviting, with plush seating options and stunning views of our tropical garden. Whether you're looking for a place to unwind after a long day at the beach or to start your evening off right, our lounge area has everything you need.
+            </p>
+            <p>
+              Our talented mixologists are on hand to create handcrafted cocktails made with only the freshest ingredients. Whether you prefer a classic martini or something more adventurous, we have something to suit every taste.
+            </p>
+            <p>
+              And no lounge experience is complete without some delicious bitings to nibble on. Our chefs have crafted a menu of small bites and appetizers that are the perfect accompaniment to your cocktail. From crispy calamari to bruschetta and everything in between, our bitings are sure to satisfy your cravings.
+            </p>
+            <p>
+              So whether you're looking for a romantic evening out or a place to catch up with friends, Casamia Italian Fine Dining Restaurant's lounge area has it all. Come join us among the palm trees and comfortable sofas and experience the best that Diani Beach has to offer.
+            </p>
+          </div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">

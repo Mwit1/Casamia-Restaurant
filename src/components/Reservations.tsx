@@ -34,10 +34,17 @@ const Reservations = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-amber-900 mb-4">
             Reservations
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Reserve your table at Bella Vita and let us create an unforgettable dining experience for you. 
-            We recommend booking in advance, especially for weekend evenings.
-          </p>
+          <div className="text-lg text-gray-600 max-w-4xl mx-auto space-y-4">
+            <p>
+              To make a reservation, kindly give us a call. Our team will be happy to assist you in selecting the perfect table for your occasion, whether you're looking for an intimate dinner for two or a larger group celebration.
+            </p>
+            <p>
+              At Casamia Italian Fine Dining Restaurant, we pride ourselves on providing exceptional service and creating an atmosphere that is both comfortable and refined. From the moment you walk through our doors, you'll be greeted with a warm welcome and made to feel like a valued guest.
+            </p>
+            <p>
+              So whether you're celebrating a special occasion or simply looking for a night out, we invite you to reserve a table and experience the best that Diani Beach has to offer. We look forward to welcoming you soon.
+            </p>
+          </div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
@@ -206,9 +213,9 @@ const Reservations = () => {
             <div className="bg-gradient-to-br from-amber-100 to-orange-100 p-6 rounded-lg">
               <h3 className="text-xl font-bold text-amber-800 mb-2">Location</h3>
               <p className="text-gray-700">
-                Via Roma 123<br />
-                20121 Milano, Italy<br />
-                Near Duomo Cathedral
+                Diani Beach<br />
+                Kenya<br />
+                Indian Ocean Coast
               </p>
             </div>
           </div>

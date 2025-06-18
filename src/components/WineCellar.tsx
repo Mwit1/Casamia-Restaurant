@@ -30,10 +30,23 @@ const WineCellar = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-amber-900 mb-4">
             Wine Cellar
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Discover our carefully curated collection of Italian wines, featuring selections 
-            from renowned vineyards across Italy's most prestigious wine regions.
-          </p>
+          <div className="text-lg text-gray-600 max-w-4xl mx-auto space-y-4">
+            <p>
+              We take our love of fine food and drink to the next level with our underground glass top wine cellar. Located under the restaurant floor, our wine cellar is a truly amazing feature.
+            </p>
+            <p>
+              It's surrounded by a stunning collection of the world's finest wines, each hand-selected by our knowledgeable sommeliers. Our collection includes an array of reds, whites, and sparkling wines, all stored in optimal conditions and to ensure the perfect taste and temperature.
+            </p>
+            <p>
+              Our wine cellar isn't just a place to store our collection – it's an experience in and of itself. The glass top allows you to gaze down at the stunning collection of bottles as you enjoy your meal, adding a touch of elegance and sophistication to your dining experience.
+            </p>
+            <p>
+              And speaking of dining, our menu is perfectly complemented by our extensive wine list. Our sommeliers are on hand to help you select the perfect bottle to pair with your meal, ensuring that every sip and every bite is a perfect match.
+            </p>
+            <p>
+              So whether you're a wine connoisseur or simply looking to enjoy a glass of something special with your meal, Casamia's underground glass top wine cellar is a must-see attraction in Diani Beach. Come join us and discover the perfect pairing of food and wine.
+            </p>
+          </div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">

@@ -27,10 +27,29 @@ const Restaurant = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-amber-900 mb-4">
             Ristorante
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Our chef brings the authentic flavors of Italy to your table, using only the finest 
-            ingredients sourced from local markets and traditional Italian suppliers.
-          </p>
+          <div className="text-lg text-gray-600 max-w-4xl mx-auto space-y-4">
+            <p>
+              At Casamia we bring the flavors of Italy to the beautiful shores of Diani Beach, Kenya. Our restaurant is a true culinary gem, offering a unique blend of authentic Italian cuisine and fresh seafood straight from the ocean.
+            </p>
+            <p>
+              At Casamia, we believe that the best dishes start with the freshest ingredients, which is why we source our seafood directly from local fishermen. From succulent prawns to flavorful lobster, our seafood dishes are sure to tantalize your taste buds and leave you craving more.
+            </p>
+            <p>
+              And it's not just seafood – our Italian dishes are equally impressive, with classic recipes and modern twists that showcase the very best of Italian cuisine. From handmade pasta to pizzas, our chefs are masters of their craft and will take you on a culinary journey that you won't soon forget.
+            </p>
+            <p>
+              But Casamia is more than just a restaurant – it's a dining experience. Our elegant decor, attentive service, and stunning ambience create a truly unforgettable atmosphere. We can't wait to welcome you to our table and share our passion for fresh Indian Ocean seafood and authentic Italian cuisine.
+            </p>
+            <p>
+              At Casamia we believe that exceptional service is just as important as the food we serve. That's why we take great care in selecting and training our team of professional waiters, who are dedicated to providing an unforgettable dining experience for every guest.
+            </p>
+            <p>
+              Our waiters are knowledgeable, friendly, and always eager to go above and beyond to ensure that every detail of your dining experience is just right. From helping you select the perfect wine to recommending a dish that perfectly suits your tastes, our team is committed to making your visit to our restaurant as enjoyable as possible.
+            </p>
+            <p>
+              We are proud to have Chef Maurizio at the helm of our kitchen. With over 15 years of experience in the culinary world, Chef Maurizio brings a wealth of knowledge and expertise to our restaurant. Born and raised in Italy, Chef Maurizio learned to cook at a young age from his grandmother, who instilled in him a love of traditional Italian cuisine. Over the years, he has honed his skills through extensive training and experience working in some of the world's top restaurants.
+            </p>
+          </div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
