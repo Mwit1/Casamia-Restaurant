@@ -17,7 +17,7 @@ const Footer = () => {
           {/* Restaurant Info */}
           <div>
             <img 
-              src="\pics\Casamia Logo (1).png" 
+              src="\pics\CasamiaLogo.png" 
               alt="Casamia Italian Restaurant Lounge Bar" 
               className="h-12 w-auto mb-4 brightness-0 invert"
             />
