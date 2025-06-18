@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { Menu, X, Facebook, Instagram, Youtube } from 'lucide-react';
 import { Icon } from 'lucide-react';
-import tripadvisor from 'lucide-react/dynamicIconImports';
+import dynamicIconImports from 'lucide-react/dynamicIconImports';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -58,7 +58,7 @@ const Header = () => {
                 aria-label={social.label}
               >
                 {social.isCustom ? (
-                  <Icon iconNode={tripadvisor} size={20} />
+                  <Icon iconNode={dynamicIconImports['tripadvisor']} size={20} />
                 ) : (
                   <social.icon size={20} />
                 )}
@@ -99,7 +99,7 @@ const Header = () => {
                   aria-label={social.label}
                 >
                   {social.isCustom ? (
-                    <Icon iconNode={tripadvisor} size={20} />
+                    <Icon iconNode={dynamicIconImports['tripadvisor']} size={20} />
                   ) : (
                     <social.icon size={20} />
                   )}
