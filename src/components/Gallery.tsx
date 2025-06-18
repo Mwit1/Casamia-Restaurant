@@ -1,5 +1,12 @@
 
 import React from 'react';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const Gallery = () => {
   const images = [
@@ -42,25 +49,41 @@ const Gallery = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {images.map((image, index) => (
-            <div
-              key={index}
-              className="group relative overflow-hidden rounded-lg shadow-lg hover-scale animate-fade-in"
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
-              <img
-                src={image.src}
-                alt={image.alt}
-                className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
-                <p className="text-white font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  {image.alt}
-                </p>
-              </div>
-            </div>
-          ))}
+        <div className="relative">
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="w-full max-w-6xl mx-auto"
+          >
+            <CarouselContent className="-ml-2 md:-ml-4">
+              {images.map((image, index) => (
+                <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
+                  <div className="group relative overflow-hidden rounded-lg shadow-lg hover-scale animate-fade-in">
+                    <img
+                      src={image.src}
+                      alt={image.alt}
+                      className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
+                      <p className="text-white font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center px-4">
+                        {image.alt}
+                      </p>
+                    </div>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="left-4 bg-white/80 hover:bg-white border-blue-600 text-blue-600 hover:text-blue-700" />
+            <CarouselNext className="right-4 bg-white/80 hover:bg-white border-blue-600 text-blue-600 hover:text-blue-700" />
+          </Carousel>
+        </div>
+
+        <div className="text-center mt-8">
+          <p className="text-gray-600">
+            Swipe or use the arrows to browse through our gallery
+          </p>
         </div>
       </div>
     </section>

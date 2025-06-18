@@ -103,6 +103,55 @@
   }
 }
 
+/* Custom accent color override */
+.text-blue-600 {
+  color: #1582b4 !important;
+}
+
+.text-blue-700 {
+  color: #126ca0 !important;
+}
+
+.text-blue-800 {
+  color: #0e5a8c !important;
+}
+
+.text-blue-900 {
+  color: #0a4878 !important;
+}
+
+.bg-blue-50 {
+  background-color: #f0f8ff !important;
+}
+
+.bg-blue-600 {
+  background-color: #1582b4 !important;
+}
+
+.bg-blue-700 {
+  background-color: #126ca0 !important;
+}
+
+.border-blue-600 {
+  border-color: #1582b4 !important;
+}
+
+.hover\:bg-blue-600:hover {
+  background-color: #1582b4 !important;
+}
+
+.hover\:bg-blue-700:hover {
+  background-color: #126ca0 !important;
+}
+
+.hover\:text-blue-600:hover {
+  color: #1582b4 !important;
+}
+
+.border-blue-100 {
+  border-color: #e6f3ff !important;
+}
+
 /* Custom animations and utilities */
 @layer utilities {
   .animate-fade-in {

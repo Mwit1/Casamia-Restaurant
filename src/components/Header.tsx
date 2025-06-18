@@ -1,6 +1,8 @@
 
 import React, { useState } from 'react';
-import { Menu, X, Facebook, Instagram, Youtube, MapPin } from 'lucide-react';
+import { Menu, X, Facebook, Instagram, Youtube } from 'lucide-react';
+import { Icon } from 'lucide-react';
+import { tripadvisor } from 'lucide-react/dynamicIconImports';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,7 +19,7 @@ const Header = () => {
     { icon: Facebook, href: '#', label: 'Facebook' },
     { icon: Instagram, href: '#', label: 'Instagram' },
     { icon: Youtube, href: '#', label: 'YouTube' },
-    { icon: MapPin, href: '#', label: 'TripAdvisor' },
+    { icon: 'tripadvisor', href: '#', label: 'TripAdvisor', isCustom: true },
   ];
 
   return (
@@ -55,7 +57,11 @@ const Header = () => {
                 className="text-gray-600 hover:text-blue-600 transition-colors duration-200"
                 aria-label={social.label}
               >
-                <social.icon size={20} />
+                {social.isCustom ? (
+                  <Icon iconNode={tripadvisor} size={20} />
+                ) : (
+                  <social.icon size={20} />
+                )}
               </a>
             ))}
           </div>
@@ -92,7 +98,11 @@ const Header = () => {
                   className="text-gray-600 hover:text-blue-600 transition-colors duration-200"
                   aria-label={social.label}
                 >
-                  <social.icon size={20} />
+                  {social.isCustom ? (
+                    <Icon iconNode={tripadvisor} size={20} />
+                  ) : (
+                    <social.icon size={20} />
+                  )}
                 </a>
               ))}
             </div>
