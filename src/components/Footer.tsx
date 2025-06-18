@@ -11,14 +11,17 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-amber-900 text-white">
+    <footer className="bg-blue-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Restaurant Info */}
           <div>
-            <h3 className="text-2xl font-bold mb-4">Bella Vita</h3>
-            <p className="text-amber-200 mb-4 italic">Ristorante & Lounge</p>
-            <p className="text-amber-100 mb-4">
+            <img 
+              src="/lovable-uploads/b35abc27-4f3d-4c63-a0ac-ff24b18f0cf0.png" 
+              alt="Casania Italian Restaurant Lounge Bar" 
+              className="h-12 w-auto mb-4 brightness-0 invert"
+            />
+            <p className="text-blue-100 mb-4">
               Experience authentic Italian cuisine in an elegant atmosphere. 
               From traditional dishes to modern interpretations, every meal is a celebration.
             </p>
@@ -29,16 +32,16 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Contact</h4>
             <div className="space-y-2">
               <div className="flex items-center">
-                <Phone className="w-4 h-4 mr-2 text-amber-300" />
-                <span className="text-amber-100">+39 02 1234 5678</span>
+                <Phone className="w-4 h-4 mr-2 text-blue-300" />
+                <span className="text-blue-100">+39 02 1234 5678</span>
               </div>
               <div className="flex items-center">
-                <Mail className="w-4 h-4 mr-2 text-amber-300" />
-                <span className="text-amber-100">info@bellavita.restaurant</span>
+                <Mail className="w-4 h-4 mr-2 text-blue-300" />
+                <span className="text-blue-100">info@casania.restaurant</span>
               </div>
               <div className="flex items-start">
-                <MapPin className="w-4 h-4 mr-2 mt-1 text-amber-300 flex-shrink-0" />
-                <span className="text-amber-100">
+                <MapPin className="w-4 h-4 mr-2 mt-1 text-blue-300 flex-shrink-0" />
+                <span className="text-blue-100">
                   Via Roma 123<br />
                   20121 Milano, Italy
                 </span>
@@ -52,7 +55,7 @@ const Footer = () => {
               <Clock className="inline w-4 h-4 mr-2" />
               Hours
             </h4>
-            <div className="space-y-1 text-amber-100">
+            <div className="space-y-1 text-blue-100">
               <p>Monday - Thursday: 12:00 PM - 11:00 PM</p>
               <p>Friday - Saturday: 12:00 PM - 12:00 AM</p>
               <p>Sunday: 12:00 PM - 10:00 PM</p>
@@ -67,22 +70,22 @@ const Footer = () => {
                 <a
                   key={social.label}
                   href={social.href}
-                  className="text-amber-200 hover:text-white transition-colors duration-200 hover-scale"
+                  className="text-blue-200 hover:text-white transition-colors duration-200 hover-scale"
                   aria-label={social.label}
                 >
                   <social.icon size={24} />
                 </a>
               ))}
             </div>
-            <p className="text-amber-200 mt-4 text-sm">
+            <p className="text-blue-200 mt-4 text-sm">
               Stay connected for special events, seasonal menus, and exclusive offers.
             </p>
           </div>
         </div>
 
-        <div className="border-t border-amber-800 mt-8 pt-8 text-center">
-          <p className="text-amber-200">
-            © 2024 Bella Vita Ristorante & Lounge. All rights reserved.
+        <div className="border-t border-blue-800 mt-8 pt-8 text-center">
+          <p className="text-blue-200">
+            © 2024 Casania Italian Restaurant & Lounge. All rights reserved.
           </p>
         </div>
       </div>

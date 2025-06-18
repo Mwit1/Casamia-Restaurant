@@ -30,15 +30,15 @@ const Gallery = () => {
   ];
 
   return (
-    <section id="gallery" className="py-20 bg-gradient-to-br from-amber-50 to-orange-50">
+    <section id="gallery" className="py-20 bg-gradient-to-br from-blue-50 to-slate-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold text-amber-900 mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-blue-900 mb-4">
             Gallery
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Take a visual journey through our restaurant and discover the elegant atmosphere 
-            that makes Bella Vita the perfect destination for any occasion.
+            that makes Casania the perfect destination for any occasion.
           </p>
         </div>
 

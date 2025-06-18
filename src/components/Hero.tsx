@@ -3,7 +3,7 @@ import React from 'react';
 
 const Hero = () => {
   return (
-    <section className="relative h-screen flex items-center justify-center bg-gradient-to-br from-amber-50 to-orange-100">
+    <section className="relative h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-slate-100">
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
         style={{
@@ -12,12 +12,13 @@ const Hero = () => {
       />
       
       <div className="relative z-10 text-center max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-5xl md:text-7xl font-bold text-amber-900 mb-6 animate-fade-in">
-          Bella Vita
-        </h1>
-        <p className="text-xl md:text-2xl text-amber-800 mb-4 italic animate-fade-in">
-          Ristorante & Lounge Bar
-        </p>
+        <div className="mb-8 animate-fade-in">
+          <img 
+            src="/lovable-uploads/b35abc27-4f3d-4c63-a0ac-ff24b18f0cf0.png" 
+            alt="Casania Italian Restaurant Lounge Bar" 
+            className="h-20 w-auto mx-auto mb-6"
+          />
+        </div>
         <p className="text-lg md:text-xl text-gray-700 mb-8 max-w-2xl mx-auto animate-fade-in">
           Experience the authentic taste of Italy in an elegant atmosphere. 
           From traditional cuisine to carefully crafted cocktails, every moment is a celebration.
@@ -26,13 +27,13 @@ const Hero = () => {
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in">
           <a
             href="#reservations"
-            className="bg-amber-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-amber-800 transition-colors duration-200 hover-scale"
+            className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200 hover-scale"
           >
             Make a Reservation
           </a>
           <a
             href="#restaurant"
-            className="border-2 border-amber-700 text-amber-700 px-8 py-3 rounded-lg font-semibold hover:bg-amber-700 hover:text-white transition-all duration-200 hover-scale"
+            className="border-2 border-blue-600 text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-600 hover:text-white transition-all duration-200 hover-scale"
           >
             Explore Menu
           </a>
@@ -40,8 +41,8 @@ const Hero = () => {
       </div>
       
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-amber-700 rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-amber-700 rounded-full mt-2 animate-pulse" />
+        <div className="w-6 h-10 border-2 border-blue-600 rounded-full flex justify-center">
+          <div className="w-1 h-3 bg-blue-600 rounded-full mt-2 animate-pulse" />
         </div>
       </div>
     </section>

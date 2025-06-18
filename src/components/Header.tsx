@@ -26,8 +26,11 @@ const Header = () => {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <h1 className="text-2xl font-bold text-amber-800">Bella Vita</h1>
-            <p className="text-xs text-amber-600 italic">Ristorante & Lounge</p>
+            <img 
+              src="/lovable-uploads/b35abc27-4f3d-4c63-a0ac-ff24b18f0cf0.png" 
+              alt="Casania Italian Restaurant Lounge Bar" 
+              className="h-12 w-auto"
+            />
           </div>
 
           {/* Desktop Navigation */}
@@ -36,7 +39,7 @@ const Header = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-gray-700 hover:text-amber-700 transition-colors duration-200 font-medium"
+                className="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium"
               >
                 {item.name}
               </a>
@@ -49,7 +52,7 @@ const Header = () => {
               <a
                 key={social.label}
                 href={social.href}
-                className="text-gray-600 hover:text-amber-700 transition-colors duration-200"
+                className="text-gray-600 hover:text-blue-600 transition-colors duration-200"
                 aria-label={social.label}
               >
                 <social.icon size={20} />
@@ -59,7 +62,7 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-gray-700 hover:text-amber-700"
+            className="md:hidden text-gray-700 hover:text-blue-600"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -74,7 +77,7 @@ const Header = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="block text-gray-700 hover:text-amber-700 transition-colors duration-200 font-medium"
+                  className="block text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
@@ -86,7 +89,7 @@ const Header = () => {
                 <a
                   key={social.label}
                   href={social.href}
-                  className="text-gray-600 hover:text-amber-700 transition-colors duration-200"
+                  className="text-gray-600 hover:text-blue-600 transition-colors duration-200"
                   aria-label={social.label}
                 >
                   <social.icon size={20} />
