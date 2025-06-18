@@ -27,7 +27,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <img 
-              src="\pics\Casamia Logo (1).png" 
+              src="/pics/CasamiaLogo.png" 
               alt="Casamia Italian Restaurant Lounge Bar" 
               className="h-12 w-auto"
             />
