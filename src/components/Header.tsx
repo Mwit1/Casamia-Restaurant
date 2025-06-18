@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { Menu, X, Facebook, Instagram, Youtube } from 'lucide-react';
 import { Icon } from 'lucide-react';
-import { tripadvisor } from 'lucide-react/dynamicIconImports';
+import tripadvisor from 'lucide-react/dynamicIconImports';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
