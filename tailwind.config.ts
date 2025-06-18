@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-require-imports */
 import type { Config } from "tailwindcss";
 
 export default {
@@ -18,6 +19,12 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				cinzel: ['Cinzel', 'serif'],
+				playfair: ['Playfair Display', 'serif'],
+				cormorant: ['Cormorant Garamond', 'serif'],
+        		lato: ['Lato', 'sans-serif'],
+				},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',

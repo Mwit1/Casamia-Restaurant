@@ -4,21 +4,21 @@ import { Facebook, Instagram, Youtube, MapPin, Phone, Mail, Clock } from 'lucide
 
 const Footer = () => {
   const socialLinks = [
-    { icon: Facebook, href: '#', label: 'Facebook' },
-    { icon: Instagram, href: '#', label: 'Instagram' },
-    { icon: Youtube, href: '#', label: 'YouTube' },
-    { icon: MapPin, href: '#', label: 'TripAdvisor' },
+    { icon: Facebook, href: 'https://www.facebook.com/profile.php?id=100089095086602', label: 'Facebook', target:'_blank' },
+    { icon: Instagram, href: 'https://www.instagram.com/casamiadiani/', label: 'Instagram' },
+    { icon: Youtube, href: 'https://www.youtube.com/@Casamia-Restaurant-Diani', label: 'YouTube' },
+    { icon: MapPin, href: 'https://www.google.com/maps/place/Casamia+Diani+Beach/@-4.3114575,39.5750008,69m/data=!3m1!1e3!4m14!1m7!3m6!1s0x184049b7106d1bd5:0x1980433109ee50d!2sCasamia+Diani+Beach!8m2!3d-4.3114454!4d39.5751667!16s%2Fg%2F11tnnj61_b!3m5!1s0x184049b7106d1bd5:0x1980433109ee50d!8m2!3d-4.3114454!4d39.5751667!16s%2Fg%2F11tnnj61_b?entry=ttu&g_ep=EgoyMDI1MDYxNS4wIKXMDSoASAFQAw%3D%3D', label: 'Location' },
   ];
 
   return (
-    <footer className="bg-blue-900 text-white">
+    <footer className="bg-[#1582b4] text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Restaurant Info */}
           <div>
             <img 
-              src="/lovable-uploads/b35abc27-4f3d-4c63-a0ac-ff24b18f0cf0.png" 
-              alt="Casania Italian Restaurant Lounge Bar" 
+              src="\pics\Casamia Logo (1).png" 
+              alt="Casamia Italian Restaurant Lounge Bar" 
               className="h-12 w-auto mb-4 brightness-0 invert"
             />
             <p className="text-blue-100 mb-4">
@@ -33,17 +33,17 @@ const Footer = () => {
             <div className="space-y-2">
               <div className="flex items-center">
                 <Phone className="w-4 h-4 mr-2 text-blue-300" />
-                <span className="text-blue-100">+39 02 1234 5678</span>
+                <span className="text-blue-100">+254 714 392 724</span>
               </div>
               <div className="flex items-center">
                 <Mail className="w-4 h-4 mr-2 text-blue-300" />
-                <span className="text-blue-100">info@casania.restaurant</span>
+                <span className="text-blue-100">info@casamiadiani.com</span>
               </div>
               <div className="flex items-start">
                 <MapPin className="w-4 h-4 mr-2 mt-1 text-blue-300 flex-shrink-0" />
                 <span className="text-blue-100">
-                  Via Roma 123<br />
-                  20121 Milano, Italy
+                  80401<br />
+                  Diani Beach Road, Kenya
                 </span>
               </div>
             </div>
@@ -56,9 +56,9 @@ const Footer = () => {
               Hours
             </h4>
             <div className="space-y-1 text-blue-100">
-              <p>Monday - Thursday: 12:00 PM - 11:00 PM</p>
-              <p>Friday - Saturday: 12:00 PM - 12:00 AM</p>
-              <p>Sunday: 12:00 PM - 10:00 PM</p>
+              <p>Monday - Friday: 4:00 PM - 11:30 PM</p>
+              <p>Saturday - Sunday: 12:00 PM - 11:30 PM</p>
+              
             </div>
           </div>
 
@@ -85,7 +85,7 @@ const Footer = () => {
 
         <div className="border-t border-blue-800 mt-8 pt-8 text-center">
           <p className="text-blue-200">
-            © 2024 Casania Italian Restaurant & Lounge. All rights reserved.
+            © 2025 Casamia Italian Restaurant & Lounge. All rights reserved.
           </p>
         </div>
       </div>

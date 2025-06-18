@@ -1,73 +1,37 @@
-# Welcome to your Lovable project
+# 🍽️ Casamia Restaurant Landing Page
 
-## Project info
+A modern, responsive, and user-friendly landing page for **Casamia Restaurant**, designed to elevate its online presence and improve customer engagement.
 
-**URL**: https://lovable.dev/projects/9f57532e-95d0-43eb-a6b5-16b9ae56df9f
+## 🌟 Live Demo
 
-## How can I edit this code?
+👉 [View Live Site](https://your-live-site-link.com) *(replace with actual URL)*
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+## 📸 Features
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/9f57532e-95d0-43eb-a6b5-16b9ae56df9f) and start prompting.
+- ✅ Clean, modern UI/UX
+- ✅ Responsive design (mobile/tablet/desktop)
+- ✅ Reservation form for table booking
+- ✅ Eye-catching hero section with restaurant imagery
+- ✅ Menu showcase (featured dishes)
+- ✅ Opening hours, contact info, and location map
+- ✅ Social media links and footer
 
-Changes made via Lovable will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+## 🛠️ Tech Stack
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- **Frontend:** HTML5, CSS3, JavaScript (Vanilla or React, depending on your stack)
+- **Frameworks/Libraries:** Bootstrap / Tailwind / React (mention what you used)
+- **Icons & Fonts:** Font Awesome, Google Fonts
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+## 🚀 Getting Started
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### 1. Clone the Repository
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/9f57532e-95d0-43eb-a6b5-16b9ae56df9f) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+```bash
+git clone https://github.com/yourusername/casamia-restaurant-landing.git
+cd casamia-restaurant-landing

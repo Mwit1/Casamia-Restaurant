@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
 import { Calendar, Clock, Users, Phone, Mail } from 'lucide-react';
+import emailjs from 'emailjs-com';
 
 const Reservations = () => {
   const [formData, setFormData] = useState({
@@ -14,11 +15,23 @@ const Reservations = () => {
   });
 
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log('Reservation submitted:', formData);
-    // Here you would typically send the data to your backend
-    alert('Thank you! Your reservation request has been submitted. We will contact you shortly to confirm.');
-  };
+  e.preventDefault();
+
+  emailjs.send(
+    'Edwin',       // Replace with your actual service ID
+    'template_mcg7sao',  // Replace with your template ID
+    formData,                // This must match your template vars
+    'f2fJ4mDgiBPpGLNrZ'        // From EmailJS account (NOT the secret key)
+  )
+  .then(() => {
+    alert('Reservation sent successfully! We’ll contact you shortly.');
+  })
+  .catch((error) => {
+    console.error('EmailJS Error:', error);
+    alert('Something went wrong. Please try again.');
+  });
+};
+
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
     setFormData({
@@ -31,10 +44,10 @@ const Reservations = () => {
     <section id="reservations" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold text-amber-900 mb-4">
+          <h2 className="text-4xl md:text-5xl font-cinzel font-bold text-[#1582b4] mb-4">
             Reservations
           </h2>
-          <div className="text-lg text-gray-600 max-w-4xl mx-auto space-y-4">
+          <div className="text-lg text-gray-600 font-cinzel max-w-4xl mx-auto space-y-4">
             <p>
               To make a reservation, kindly give us a call. Our team will be happy to assist you in selecting the perfect table for your occasion, whether you're looking for an intimate dinner for two or a larger group celebration.
             </p>
@@ -178,50 +191,55 @@ const Reservations = () => {
 
               <button
                 type="submit"
-                className="w-full bg-amber-700 text-white py-3 px-6 rounded-lg font-semibold hover:bg-amber-800 transition-colors duration-200 hover-scale"
+                className="w-full bg-[#1582b4] text-white py-3 px-6 rounded-lg font-semibold hover:bg-red-800 transition-colors duration-200 hover-scale"
               >
-                Submit Reservation
+                Submit Reservation 
               </button>
             </form>
           </div>
 
           <div className="animate-fade-in space-y-8">
             <div className="bg-amber-50 p-6 rounded-lg">
-              <h3 className="text-xl font-bold text-amber-800 mb-4">Contact Information</h3>
+              <h3 className="text-xl font-bold text-[#1582b4] mb-4">Contact Information</h3>
               <div className="space-y-3">
                 <div className="flex items-center">
-                  <Phone className="w-5 h-5 text-amber-600 mr-3" />
-                  <span className="text-gray-700">+39 02 1234 5678</span>
+                  <Phone className="w-5 h-5 text-[#1582b4] mr-3" />
+                  <span className="text-gray-700">+254 714 392 724</span>
                 </div>
                 <div className="flex items-center">
-                  <Mail className="w-5 h-5 text-amber-600 mr-3" />
-                  <span className="text-gray-700">info@bellavita.restaurant</span>
+                  <Mail className="w-5 h-5 text-[#1582b4] mr-3" />
+                  <span className="text-gray-700">info@casamiadiani.com</span>
                 </div>
               </div>
             </div>
 
-            <div className="bg-white p-6 rounded-lg shadow-lg">
-              <h3 className="text-xl font-bold text-amber-800 mb-4">Reservation Policy</h3>
-              <ul className="space-y-2 text-gray-700">
-                <li>• Reservations are held for 15 minutes past the reserved time</li>
-                <li>• Large parties (8+) may require a deposit</li>
-                <li>• Cancellations must be made 24 hours in advance</li>
-                <li>• We accommodate dietary restrictions with advance notice</li>
-              </ul>
+          <div className="bg-[#1582b4] p-6 rounded-lg">
+            <h3 className="text-xl font-bold text-white mb-4">Location</h3>
+            <p className="text-white mb-4">
+              Diani Beach Road, Ukunda<br />
+              Kenya<br />
+              
+            </p>
+            <div className="rounded-lg overflow-hidden">
+              <iframe
+                title="Casamia Map"
+                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15956.722949437375!2d39.5750008!3d-4.3114575!3m2!1i1024!2i768!4f35!3m3!1m2!1s0x184049b7106d1bd5%3A0x1980433109ee50d!2sCasamia%20Diani%20Beach!5e1!3m2!1sen!2ske!4v1718729745273!5m2!1sen!2ske"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen={true}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
+          </div>
 
-            <div className="bg-gradient-to-br from-amber-100 to-orange-100 p-6 rounded-lg">
-              <h3 className="text-xl font-bold text-amber-800 mb-2">Location</h3>
-              <p className="text-gray-700">
-                Diani Beach<br />
-                Kenya<br />
-                Indian Ocean Coast
-              </p>
-            </div>
+
           </div>
         </div>
       </div>
     </section>
+    
   );
 };
 

@@ -10,40 +10,80 @@ import {
 
 const Gallery = () => {
   const images = [
+     {
+      src: "/pics/Casamia-Restaurant-Diani-Beach-3.avif",
+      alt: 'Arial View'
+    },
+    
     {
-      src: 'https://images.unsplash.com/photo-1721322800607-8c38375eef04?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-      alt: 'Elegant dining room'
+      src: "/pics/Casamia-Restaurant-Diani-Beach-1.avif",
+      alt: 'Casamia'
     },
     {
-      src: 'https://images.unsplash.com/photo-1500673922987-e212871fec22?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-      alt: 'Cozy lounge atmosphere'
+      src: "/pics/Casamia-Restaurant-Diani-Beach-5.avif",
+      
     },
     {
-      src: 'https://images.unsplash.com/photo-1472396961693-142e6e269027?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-      alt: 'Wine cellar collection'
+      src: "/pics/Casamia-Restaurant-Diani-Beach-59.avif",
+       
+    },
+    
+    {
+      src: "/pics/Casamia-Restaurant-Diani-Beach-60.avif",
+      
     },
     {
-      src: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-      alt: 'Outdoor terrace'
+      src: "/pics/Casamia-Restaurant-Diani-Beach-55.avif",
+      
     },
     {
-      src: 'https://images.unsplash.com/photo-1721322800607-8c38375eef04?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-      alt: 'Chef preparing dishes'
+      src: "/pics/Casamia-Restaurant-Diani-Beach-47.avif",
+      
     },
     {
-      src: 'https://images.unsplash.com/photo-1500673922987-e212871fec22?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-      alt: 'Bar counter with cocktails'
-    }
+      src: "/pics/Casamia-Restaurant-Diani-Beach-46.avif",
+      
+    },
+    {
+      src: "/pics/Casamia-Restaurant-Diani-Beach-37.avif",
+      
+    },
+     {
+      src: "/pics/Casamia-Restaurant-Diani-Beach-28.avif",
+      
+    },
+    
+    {
+      src: "/pics/Casamia-Restaurant-Diani-Beach-22.avif",
+      
+    },
+    {
+      src: "/pics/Casamia-Restaurant-Diani-Beach-23.avif",
+      
+    },
+    {
+      src: "/pics/Casamia-Restaurant-Diani-Beach-19.avif",
+      
+    },
+    {
+      src: "/pics/Casamia-Restaurant-Diani-Beach-20.avif",
+      
+    },
+    {
+      src: "/pics/Casamia-Restaurant-Diani-Beach-34.avif",
+      
+    },
+     
   ];
 
   return (
     <section id="gallery" className="py-20 bg-gradient-to-br from-blue-50 to-slate-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold text-blue-900 mb-4">
+          <h2 className="text-4xl font-cinzel md:text-5xl font-bold text-[#1582b4] mb-4">
             Gallery
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 font-playfair max-w-3xl mx-auto">
             Take a visual journey through our restaurant and discover the elegant atmosphere 
             that makes Casania the perfect destination for any occasion.
           </p>
@@ -82,7 +122,7 @@ const Gallery = () => {
 
         <div className="text-center mt-8">
           <p className="text-gray-600">
-            Swipe or use the arrows to browse through our gallery
+            Swipe or use the arrows to browse through our Gallery
           </p>
         </div>
       </div>

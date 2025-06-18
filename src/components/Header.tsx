@@ -14,10 +14,10 @@ const Header = () => {
   ];
 
   const socialLinks = [
-    { icon: Facebook, href: '#', label: 'Facebook' },
-    { icon: Instagram, href: '#', label: 'Instagram' },
-    { icon: Youtube, href: '#', label: 'YouTube' },
-    { icon: Star, href: '#', label: 'TripAdvisor' },
+    { icon: Facebook, href: 'https://www.facebook.com/profile.php?id=100089095086602', label: 'Facebook', target:'_blank' },
+    { icon: Instagram, href: 'https://www.instagram.com/casamiadiani/', label: 'Instagram' },
+    { icon: Youtube, href: 'https://www.youtube.com/@Casamia-Restaurant-Diani', label: 'YouTube' },
+    { icon: Star, href: 'https://www.tripadvisor.com/Restaurant_Review-g775870-d25228468-Reviews-Casamia-Diani_Beach_Ukunda_Coast_Province.html', label: 'TripAdvisor' },
   ];
 
   return (
@@ -27,8 +27,8 @@ const Header = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <img 
-              src="/lovable-uploads/b35abc27-4f3d-4c63-a0ac-ff24b18f0cf0.png" 
-              alt="Casania Italian Restaurant Lounge Bar" 
+              src="\pics\Casamia Logo (1).png" 
+              alt="Casamia Italian Restaurant Lounge Bar" 
               className="h-12 w-auto"
             />
           </div>
