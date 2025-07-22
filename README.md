@@ -4,7 +4,7 @@ A modern, responsive, and user-friendly landing page for **Casamia Restaurant**,
 
 ## 🌟 Live Demo
 
-👉 [View Live Site](https://your-live-site-link.com) *(replace with actual URL)*
+👉 [View Live Site](https://casamia-restaurant.netlify.app/)
 
 ---
 
@@ -33,5 +33,5 @@ A modern, responsive, and user-friendly landing page for **Casamia Restaurant**,
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/casamia-restaurant-landing.git
-cd casamia-restaurant-landing
+git clone https://github.com/yourusername/casamia-restaurant.git
+cd casamia-restaurant
